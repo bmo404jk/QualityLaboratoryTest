@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 public class MainTest extends BaseTest
 {
     @Test
-    @Description("Заходим на сайт под уже созданной четной записью")
+    @Description("Заходим на сайт под уже созданной учетной записью")
     public void enterAccountTest()
     {
         LoginPage loginPage = new LoginPage();
