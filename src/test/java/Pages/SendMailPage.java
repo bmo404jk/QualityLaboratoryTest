@@ -15,7 +15,6 @@ public class SendMailPage extends BasePage
     private WebElement sendLetterButton;
     @FindBy(xpath = "//body[@class='page vkui__root g-pony-mode default-font vkui--vkBase--light theme-t6000']")
     private WebElement container;
-
     public void creatingLetterText(String letterText)
     {
         writeButton.click();
