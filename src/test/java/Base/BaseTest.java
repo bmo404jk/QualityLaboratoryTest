@@ -1,5 +1,5 @@
 package Base;
-import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,8 +15,8 @@ public abstract class BaseTest
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         BasePage.setDriver(driver);
     }
-    @AfterEach
-    public void driverClose()
+    @AfterAll
+    public static void driverClose()
     {
         driver.close();
         driver.quit();
